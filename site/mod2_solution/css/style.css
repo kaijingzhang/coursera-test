@@ -1,0 +1,78 @@
+
+.container>div{
+	background-color:grey;
+	position: relative;
+	border: 1px solid black;
+	float:left;
+	padding:10px;
+	margin:10px;
+	box-sizing:border-box;
+}
+
+div.title{
+	text-align: center;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 80px;
+    padding: 10px;
+    //border-bottom: 1px solid black;
+    border: 1px solid black;
+}
+.title1{
+	background-color: red;
+	color:white;
+
+}
+.title2{
+	background-color: blue;
+	color:white;
+
+}
+.title3{
+	background-color: purple;
+	color:white; 
+}
+p {
+	margin-top: 40px;
+}
+
+h1{
+	text-align:center;
+}
+
+
+@media (max-width:767px) {
+	// .container>div{
+	// 	width:100%;
+	// }
+
+}
+@media (max-width:991px) and (min-width:768px) {
+	.container {
+		width:97%;
+		margin: 0 auto;
+	}
+	.container>div:nth-of-type(1),.container>div:nth-of-type(2) {
+	  width:47%;
+	  box-sizing:border-box;
+	  display: inline-block;
+	}
+	.container>div:nth-of-type(3){
+		margin-right: 21px;
+		box-sizing:border-box;
+	}
+	//use nth-of-type here
+
+}
+@media(min-width:992px) {
+	.container {
+		display: flex;
+	}
+	.container>div{
+		width: 31%;
+		flex:1;
+	}
+
+}
